@@ -3,3 +3,4 @@
 
 *.html text diff=html
 *.css text diff=css
+*.javascript text diff=javascript
