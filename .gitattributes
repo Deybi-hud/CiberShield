@@ -2,3 +2,4 @@
 * text=auto
 
 *.html text diff=html
+*.css text diff=css
