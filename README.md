@@ -1,4 +1,4 @@
-<h1 align="center"style="color: red">CiberShield</h1>
+<h1 align="center"style="color: red";>CiberShield</h1>
 <p align="center"><em>E-commerce especializado en productos y servicios de ciberseguridad</em></p>
 
 ---
