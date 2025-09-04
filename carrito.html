@@ -16,10 +16,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a class="boton-volver" href="index.html"><i class="bi bi-arrow-return-left"></i> Carrito <span class="numero">0</span></a>
+                        <a class="boton-manu boton-volver" href="index.html"><i class="bi bi-arrow-return-left"></i> Seguir comprando<span class="numero">0</span></a>
                     </li>
                     <li>
-                        <a class="boton-carrito" href="html/carrito.html"><i class="bi bi-cart-fill"></i> Carrito <span class="numero">0</span></a>
+                        <a class="boton-manu boton-carrito active" href="html/carrito.html"><i class="bi bi-cart-fill"></i> Carrito 
                     </li>
                 </ul>
             </nav>
@@ -28,34 +28,33 @@
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal">Todo los productos</h2>
-            <div class="contenedor-productos">
-                <div class="productos">
-                    <img class="producto-imagen" src="assets/img/01.jpg" alt="Imagen del producto">
-                    <div class="producto-detalle">
-                        <h3 class="producto-titulo">Llave de seguridad USB</h3>
-                        <p class="producto-precio">$50.000</p>
-                        <button class="producto-agregar">Agregar</button>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio">Tu carrito esta vacio <i class="bi bi-emoji-frown-fill"></i></p>
+
+                <div class="carrito-productos">
+                    <div class="carrito-productos">
+                        <img src="assets/img/01.jpg" alt="Imagen del producto">
+                        <div class="carrito-producto-titulo">
+                            <small>Titulo</small>
+                            <h3>Llave de seguridad USB</h3>
+                        </div>
+                        <div class="carrito-producto-cantidada">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>50.000</p>
+                        </div>
                     </div>
                 </div>
-                <div class="productos">
-                    <img class="producto-imagen" src="assets/img/02.jpg" alt="Imagen del producto">
-                    <div class="producto-detalle">
-                        <h3 class="producto-titulo">Billetera diseñada para bloquear señales RFID</h3>
-                        <p class="producto-precio">$10.000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="productos">
-                    <img class="producto-imagen" src="assets/img/03.jpg" alt="Imagen del producto">
-                    <div class="producto-detalle">
-                        <h3 class="producto-titulo">Módulo de Seguridad de Hardware (HSM) </h3>
-                        <p class="producto-precio">$20.000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
+
             </div>
+
         </main>
     </div>
+
+    <script src="assets/js/carrito.js"></script>
 </body>
 </html>
