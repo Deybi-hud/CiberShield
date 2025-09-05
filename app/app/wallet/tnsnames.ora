@@ -1,0 +1,12 @@
+cibershield_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-santiago-1.oraclecloud.com))(connect_data=(service_name=gba9b0121f7a306_cibershield_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+cibershield_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-santiago-1.oraclecloud.com))(connect_data=(service_name=gba9b0121f7a306_cibershield_low.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+cibershield_medium = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-santiago-1.oraclecloud.com))(connect_data=(service_name=gba9b0121f7a306_cibershield_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+cibershield_tp = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-santiago-1.oraclecloud.com))(connect_data=(service_name=gba9b0121f7a306_cibershield_tp.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+cibershield_tpurgent = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.sa-santiago-1.oraclecloud.com))(connect_data=(service_name=gba9b0121f7a306_cibershield_tpurgent.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+
+
