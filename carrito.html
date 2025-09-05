@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>CiberShield</title>
 </head>
 <body>
@@ -16,11 +17,15 @@
             <nav>
                 <ul>
                     <li>
-                        <a class="boton-manu boton-volver" href="index.html"><i class="bi bi-arrow-return-left">
-                            </i>Seguir comprando</a>
+                        <a class="boton-menu boton-volver active" href="./index.html">
+                            <i class="bi bi-arrow-return-left"></i> Seguir comprando
+                        </a>
                     </li>
                     <li>
-                        <a class="boton-manu boton-carrito active" href="html/carrito.html"><i class="bi bi-cart-fill"></i> Carrito 
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <button class="boton-menu boton-categoria" href="html/carrito.html" >
+                            <i class="bi bi-cart-fill"></i> Carrito <span class="numerito">0</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -31,66 +36,66 @@
         <main>
             <h2 class="titulo-principal">Carrito</h2>
             <div class="contenedor-carrito">
-                <p class="carrito-vacio">Tu carrito esta vacio <i class="bi bi-emoji-frown-fill"></i></p>
+                <p id="carrito-vacio" class="carrito-vacio">Tú carrito está vacío <i class="bi bi-emoji-frown"></i></p>
                 <div class="carrito-productos">
-                    <div class="carrito-productos">
-                        <img src="assets/img/01.jpg" alt="Imagen del producto">
+                    <div class="carrito-producto">
+                        <img src="assets/img/01.jpg" alt="">
                         <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Llave de seguridad USB</h3>
+                            <small>Título</small>
+                            <h3>Componente 1</h3>
                         </div>
-                        <div class="carrito-producto-cantidada">
+                        <div class="carrito-producto-cantidad">
                             <small>Cantidad</small>
                             <p>1</p>
                         </div>
                         <div class="carrito-producto-precio">
                             <small>Precio</small>
-                            <p>50.000</p>
+                            <p>$20000</p>
                         </div>
                         <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$50.000</p>
+                            <small>subtotal</small>
+                            <p>$20000</p>
                         </div>
                         <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
                 <div class="carrito-productos">
-                    <div class="carrito-productos">
-                        <img src="assets/img/02.jpg" alt="Imagen del producto">
+                    <div class="carrito-producto">
+                        <img src="assets/img/01.jpg" alt="">
                         <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Billetera anti RFID</h3>
+                            <small>Título</small>
+                            <h3>Componente 1</h3>
                         </div>
-                        <div class="carrito-producto-cantidada">
+                        <div class="carrito-producto-cantidad">
                             <small>Cantidad</small>
-                            <p>2</p>
+                            <p>1</p>
                         </div>
                         <div class="carrito-producto-precio">
                             <small>Precio</small>
-                            <p>20.000</p>
+                            <p>$20000</p>
                         </div>
                         <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$20.000</p>
+                            <small>subtotal</small>
+                            <p>$20000</p>
                         </div>
                         <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
                     </div>
                 </div>
-                <div class="carrito-acciones"></div>
-                    <div class="carritos-acciones-izquierda">
-                        <button class="carrito-acciones-vacias"></button>
+                <div class="carrito-acciones">
+                    <div class="carrito-acciones-izquierda">
+                        <button class="carrito-acciones-vaciar">Vaciar carrito</button>
                     </div>
-                    <div class="carritos-acciones-derecha">
+                    <div class="carrito-acciones-derecha">
                         <div class="carrito-acciones-total">
-                            <p>Total</p>
-                            <p id="total">$70.000</p>
+                            <p>Total:</p>
+                            <p id="total">$40000</p>
                         </div>
+                        <button class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
+                </div>
             </div>
-
         </main>
     </div>
-
-    <script src="assets/js/carrito.js"></script>
 </body>
+    <script src="assets/js/carrito.js"></script>
 </html>
