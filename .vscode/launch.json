@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CiberShieldApplication",
+            "request": "launch",
+            "mainClass": "CiberShieldApplication",
+            "projectName": "CiberShield_c0f30984"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-CiberShieldApplication<app>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
