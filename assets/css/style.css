@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #444;
-    --clr-main-light: #785ce9;
+    --clr-main: #11212d;
+    --clr-main-light: #9ba8ab;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
@@ -220,6 +220,7 @@ main {
 .carrito-producto-imagen {
     width: 4rem;
     border-radius: 1rem;
+    
 }
 
 .carrito-producto small {
