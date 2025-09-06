@@ -27,5 +27,3 @@
 [![CSS](https://img.shields.io/badge/CSS-563d7c?&style=flat&logo=css3&logoColor=white)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-badge&logo=javascript&logoColor=black)](#)
 [![Git](https://img.shields.io/badge/Git-F05032?style=flat-badge&logo=git&logoColor=white)](#)
-
-<p align="center">Proyecto desarrollado como parte de la asignatura <strong>Full Stack</strong></p>
