@@ -260,6 +260,7 @@ main {
     border-radius: 1rem;
     color: var(--clr-main);
     text-transform: uppercase;
+    border: 2px solid var(--clr-main);
     cursor: pointer;
 }
 
