@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #11212d;
-    --clr-main-light: #9ba8ab;
-    --clr-white: #ececec;
-    --clr-gray: #e2e2e2;
-    --clr-red: #961818;
+    --clr-main: #11212d;       
+    --clr-main-light: #9ba8ab; 
+    --clr-white: #ececec;      
+    --clr-gray: #e2e2e2;       
+    --clr-red: #961818;        
 }
 
 * {
@@ -238,9 +238,15 @@ main {
 .carrito-producto-eliminar {
     border: 0;
     background-color: transparent;
-    color: var(--clr-red);
+    color: var(--clr-main);
     cursor: pointer;
 }
+
+.carrito-producto-eliminar:hover {
+    background-color: var(--clr-gray);
+    color: var(--clr-red);
+}
+
 
 .carrito-acciones {
     display: flex;
@@ -256,6 +262,13 @@ main {
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.carrito-acciones-vaciar:hover {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+}
+
+
 
 .carrito-acciones-derecha {
     display: flex;
