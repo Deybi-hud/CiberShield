@@ -74,7 +74,6 @@ aside {
 .boton-menu.active {
     background-color: var(--clr-white);
     color: var(--clr-main);
-    width: 100%;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     position: relative;
@@ -158,12 +157,14 @@ main {
     object-fit: contain; 
     margin-left: 0rem ;      
     display: block;
+   
 }
 
 .producto-detalles {
     background-color: var(--clr-main);
     color: var(--clr-white);
     padding: .5rem;
+    top: 1rem;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     margin-top: -2rem;
