@@ -237,6 +237,7 @@ main {
 
 .carrito-producto-eliminar {
     border: 0;
+    margin-top: 1.2rem;
     background-color: transparent;
     color: var(--clr-main);
     cursor: pointer;
