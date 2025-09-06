@@ -20,24 +20,24 @@ const productosArray = [
         precio: 10000
     },
     {
-        id:"Llave de seguridaad USB-02",
-        nombre:"Llave de seguridad USB 2",
-        Imagen:"assets/img/hardware/01.jpg",
+        id:"Malwarebyte-01",
+        nombre:"Malwarebyte",
+        Imagen:"assets/img/software/01.jpg",
         categoria:{
-            nombre:"hardware",
-            id:"hardware"
+            nombre:"software",
+            id:"software"
         },
         precio: 50000
     },
     {
-        id:"Billetera anti RFID-02",
-        nombre:"Billetera anti RFID 3",
-        Imagen:"assets/img/hardware/02.jpg",
+        id:"ProtonVPN-01",
+        nombre:"ProtonVPN",
+        Imagen:"assets/img/software/02.jpg",
         categoria:{
-            nombre:"hardware",
-            id:"hardware"
+            nombre:"software",
+            id:"software"
         },
-        precio: 10000
+        precio: 120000
     },
 ]
 
