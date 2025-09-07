@@ -50,6 +50,8 @@ const tituloPrincipal = document.querySelector('#titulo-principal');
 
 let botonAgregar = document.querySelectorAll('.producto-agregar');
 
+const numerito = document.querySelector('#numerito');
+
 
 function cargarProductos(productosElegidos){
 
@@ -128,4 +130,15 @@ function agregarAlCarrito(e){
         productosAgregado.cantidad = 1;
         productosEnCarrito.push(productosAgregado);   
     }
+    actualizarNumeroCarrito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+
+}
+
+
+function actualizarNumeroCarrito(){
+    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numerito.innerText = nuevoNumerito;
+
 }
