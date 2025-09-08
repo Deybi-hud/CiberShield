@@ -2,8 +2,9 @@
 const productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito"));
 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
-const contenedorCarritoProductos = document.querySelector(".carrito-productos");
-const contenedorCarritoAcciones = document.querySelector(".carrito-acciones");
+const contenedorCarritoProductos = document.querySelector("#carrito-productos");
+const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
+const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
 
 function cargarProductosCarrito() {
 
@@ -12,6 +13,8 @@ function cargarProductosCarrito() {
         contenedorCarritoVacio.classList.add("disabled");
         contenedorCarritoProductos.classList.remove("disabled");
         contenedorCarritoAcciones.classList.remove("disabled");
+        contenedorCarritoComprado.classList.remove("disabled")
+;
 
         contenedorCarritoProductos.innerHTML = "";
 
@@ -47,7 +50,7 @@ function cargarProductosCarrito() {
         contenedorCarritoVacio.classList.remove("disabled");
         contenedorCarritoProductos.classList.add("disabled");
         contenedorCarritoAcciones.classList.add("disabled");  
-
+        contenedorCarritoComprado.classList.add("disabled");
     }
 }
 
