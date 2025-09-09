@@ -8,7 +8,7 @@ const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
 
 function cargarProductosCarrito() {
 
-    if (productosEnCarrito) {
+    if (productosEnCarrito && productosEnCarrito.length > 0) {
         
         productosEnCarrito = JSON.parse(productosEnCarrito)
 
