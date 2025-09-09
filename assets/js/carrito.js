@@ -9,6 +9,8 @@ const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
 function cargarProductosCarrito() {
 
     if (productosEnCarrito) {
+        
+        productosEnCarrito = JSON.parse(productosEnCarrito)
 
         contenedorCarritoVacio.classList.add("disabled");
         contenedorCarritoProductos.classList.remove("disabled");
