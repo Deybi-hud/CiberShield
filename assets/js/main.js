@@ -7,7 +7,7 @@ let productosEnCarrito;
 const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
 
 if (productosEnCarritoLS) {
-    productosEnCarrito = productosEnCarritoLS;
+    productosEnCarrito = Json.parse(productosEnCarritoLS);
     actualizarNumerito();
 } else {
     productosEnCarrito = [];
