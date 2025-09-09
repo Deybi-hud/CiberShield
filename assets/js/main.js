@@ -4,6 +4,11 @@ const tituloPrincipal = document.querySelector('#titulo-principal');
 const numerito = document.querySelector('.numerito');
 let productosEnCarrito;
 
+fetch('./assets/js/productos.json').then(response => response.json()).then(data => {
+    productosArray = data;
+    cargarProductos(productosArray);
+});
+
 const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
 
 if (productosEnCarritoLS) {
@@ -13,36 +18,6 @@ if (productosEnCarritoLS) {
     productosEnCarrito = [];
 }
 
-const productosArray = [
-    {
-        id: "Llave de seguridad USB-01",
-        nombre: "Llave de seguridad USB",
-        Imagen: "./assets/img/hardware/01.jpg",
-        categoria: { nombre: "hardware", id: "hardware" },
-        precio: 50000
-    },
-    {
-        id: "Billetera anti RFID-01",
-        nombre: "Billetera anti RFID",
-        Imagen: "./assets/img/hardware/02.jpg",
-        categoria: { nombre: "hardware", id: "hardware" },
-        precio: 10000
-    },
-    {
-        id: "Malwarebytes-01",
-        nombre: "Malwarebytes",
-        Imagen: "./assets/img/software/01.jpg",
-        categoria: { nombre: "software", id: "software" },
-        precio: 60000
-    },
-    {
-        id: "ProtonVPN-01",
-        nombre: "ProtonVPN",
-        Imagen: "./assets/img/software/02.jpg",
-        categoria: { nombre: "software", id: "software" },
-        precio: 120000
-    }
-];
 
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
@@ -51,7 +26,7 @@ function cargarProductos(productosElegidos) {
         const div = document.createElement('div');
         div.classList.add('producto');
         div.innerHTML = `
-            <img class="producto-imagen" src="${producto.Imagen}" alt="${producto.nombre}">
+            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.nombre}">
             <div class="producto-detalles">
                 <h3 class="producto-titulo">${producto.nombre}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
