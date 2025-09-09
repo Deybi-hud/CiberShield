@@ -1,4 +1,3 @@
-
 const productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito"));
 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
@@ -7,21 +6,17 @@ const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
 const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
 
 function cargarProductosCarrito() {
-
     if (productosEnCarrito && productosEnCarrito.length > 0) {
-        
-        productosEnCarrito = JSON.parse(productosEnCarrito)
+
 
         contenedorCarritoVacio.classList.add("disabled");
         contenedorCarritoProductos.classList.remove("disabled");
         contenedorCarritoAcciones.classList.remove("disabled");
-        contenedorCarritoComprado.classList.remove("disabled")
-;
+        contenedorCarritoComprado.classList.add("disabled"); 
 
         contenedorCarritoProductos.innerHTML = "";
 
         productosEnCarrito.forEach(producto => {
-
             const div = document.createElement("div");
             div.classList.add("carrito-producto");
             div.innerHTML = `
@@ -46,12 +41,12 @@ function cargarProductosCarrito() {
             `;
 
             contenedorCarritoProductos.append(div);
-        })
+        });
 
     } else {
         contenedorCarritoVacio.classList.remove("disabled");
         contenedorCarritoProductos.classList.add("disabled");
-        contenedorCarritoAcciones.classList.add("disabled");  
+        contenedorCarritoAcciones.classList.add("disabled");
         contenedorCarritoComprado.classList.add("disabled");
     }
 
@@ -61,7 +56,7 @@ function cargarProductosCarrito() {
 cargarProductosCarrito();
 
 function actualizarBotonesEliminar() {
-    botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
+    const botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 
     botonesEliminar.forEach(boton => {
         boton.addEventListener("click", eliminarDelCarrito);
@@ -72,9 +67,9 @@ function eliminarDelCarrito(e) {
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
 
-    productosEnCarrito.splice(index, 1);
-    cargarProductosCarrito();
-
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-
+    if (index !== -1) {
+        productosEnCarrito.splice(index, 1);
+        cargarProductosCarrito();
+        localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    }
 }
