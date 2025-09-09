@@ -1,0 +1,42 @@
+[
+    {
+       "id": "Llave de seguridad USB-01",
+        "nombre": "Llave de seguridad USB",
+        "imagen": "./assets/img/hardware/01.jpg",
+        "categoria": { 
+            "nombre": "hardware",
+            "id": "hardware" 
+        },
+        "precio": 50000
+    },
+    {
+       "id": "Billetera anti RFID-01",
+        "nombre": "Billetera anti RFID",
+        "imagen": "./assets/img/hardware/02.jpg",
+        "categoria": {
+            "nombre": "hardware",
+            "id": "hardware" 
+
+        },
+        "precio": 10000
+    },
+    {
+       "id": "Malwarebytes-01",
+        "nombre": "Malwarebytes",
+        "imagen": "./assets/img/software/01.jpg",
+        "categoria": { 
+            "nombre": "software",
+            "id": "software" },
+        "precio": 60000
+    },
+    {
+       "id": "ProtonVPN-01",
+        "nombre": "ProtonVPN",
+        "imagen": "./assets/img/software/02.jpg",
+        "categoria": { 
+            "nombre": "software",
+            "id": "software" 
+        },
+        "precio": 120000
+    }
+]
