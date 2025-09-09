@@ -13,8 +13,6 @@
 <ul>
   <li>Tienda en línea de <strong>hardware y software de seguridad</strong></li>
   <li>Catálogo inicial de productos: llaves de seguridad, USB cifrados, accesorios anti-RFID</li>
-  <li>Interfaz responsiva y moderna</li>
-  <li>Foco en educación digital: cada producto viene acompañado de una guía de uso</li>
 </ul>
 
 ---
