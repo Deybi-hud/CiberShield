@@ -3,6 +3,7 @@
        "id": "Llave de seguridad USB-01",
         "nombre": "Llave de seguridad USB",
         "imagen": "/assets/img/hardware/01.jpg",
+        "descripcion": "una llave de seguridad que puede desbloquear un dispositivo",
         "categoria": { 
             "nombre": "hardware",
             "id": "hardware" 
@@ -13,6 +14,7 @@
        "id": "Billetera anti RFID-01",
         "nombre": "Billetera anti RFID",
         "imagen": "/assets/img/hardware/02.jpg",
+        "descripcion": "una billetera de alta seguridad electronica",
         "categoria": {
             "nombre": "hardware",
             "id": "hardware" 
@@ -24,6 +26,7 @@
        "id": "Malwarebytes-01",
         "nombre": "Malwarebytes",
         "imagen": "/assets/img/software/01.jpg",
+        "descripcion": "un software que evita que los programas malisiosos se infiltren en tu dispositivo",
         "categoria": { 
             "nombre": "software",
             "id": "software" },
@@ -33,6 +36,7 @@
        "id": "ProtonVPN-01",
         "nombre": "ProtonVPN",
         "imagen": "/assets/img/software/02.jpg",
+        "descripcion": "un software de vpn indetectable para una conexion segura",
         "categoria": { 
             "nombre": "software",
             "id": "software" 
