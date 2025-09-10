@@ -301,13 +301,17 @@ main {
 
 .carrito-producto {
     display: flex;
-    justify-content: space-between;
+    gap: 3.5rem;
     align-items: center;
     background-color: var(--clr-gray);
     color: var(--clr-main);
     padding: .5rem;
     padding-right: 1.5rem;
     border-radius: 1rem;
+}
+
+.carrito-producto-titulo {
+    flex-grow: 1; 
 }
 
 .carrito-producto-imagen {
